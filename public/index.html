@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WAPIPD</title>
+    </head>
+    <body>
+        <h1>Make sure to open Inspect Element console.(Might not work if hosted in localhost)</h1>
+        <button onclick="test()">Click me</button>
+
+        <script>
+            function test(){
+                const XMLHTTP = new XMLHttpRequest()
+                XMLHTTP.open("GET", "http://localhost:8080/api", false)
+                XMLHTTP.send(null)
+                
+                console.log(XMLHTTP.responseText)
+            }
+        </script>
+    </body>
+</html>
